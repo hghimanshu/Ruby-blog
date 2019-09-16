@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  protect_from_forgery :except => [:new]
 
   def index
 
